@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Coding Agent 市场调研 2026</title>
+  <script src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/tailwindcss/3.0.23/tailwind.min.js"></script>
+  <link href="https://fonts.loli.net/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.loli.net/css2?family=Noto+Sans+SC:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <style>
+    body{margin:0;background:#000;color:#fff;font-family:'Noto Sans SC','Inter',sans-serif;overflow:hidden}
+    .slides-container{width:100vw;height:100vh;display:flex;align-items:center;justify-content:center;background:#0a0a0a}
+    .slide{width:100%;height:100%;max-width:450px;max-height:800px;aspect-ratio:9/16;position:absolute;padding:2rem;overflow:hidden;display:flex;align-items:center;justify-content:center;opacity:0;transform:translateX(100%);transition:all .5s cubic-bezier(.4,0,.2,1);background:linear-gradient(180deg,#0a0a0a 0%,#000 100%)}
+    .slide.active{opacity:1;transform:translateX(0)} .slide.prev{opacity:0;transform:translateX(-100%)}
+    .light-spot{position:absolute;border-radius:50%;filter:blur(90px);opacity:.28;pointer-events:none}
+    .s1{width:280px;height:280px;background:#3b82f6;top:-90px;right:-90px;animation:f1 20s ease-in-out infinite}
+    .s2{width:220px;height:220px;background:#8b5cf6;bottom:-80px;left:-70px;animation:f2 24s ease-in-out infinite}
+    .s3{width:180px;height:180px;background:#06b6d4;top:45%;left:40%;animation:f3 18s ease-in-out infinite}
+    @keyframes f1{0%,100%{transform:translate(0,0)}50%{transform:translate(40px,40px)}}
+    @keyframes f2{0%,100%{transform:translate(0,0)}50%{transform:translate(-30px,-30px)}}
+    @keyframes f3{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(20px,-20px) scale(1.2)}}
+    .progress{position:fixed;bottom:18px;left:50%;transform:translateX(-50%);display:flex;gap:7px;z-index:9}
+    .dot{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.28);cursor:pointer}.dot.active{background:#fff;transform:scale(1.25)}
+    .page{position:fixed;bottom:44px;left:50%;transform:translateX(-50%);font-size:12px;color:rgba(255,255,255,.45);z-index:9}
+    ul.clean{list-style:none;padding:0;margin:0} ul.clean li{margin:.5rem 0;color:#d1d5db;font-size:1rem;line-height:1.5}
+    .kpi{font-size:3.25rem;font-weight:900;line-height:1.05}
+  </style>
+</head>
+<body>
+  <div class="slides-container">
+    <section class="slide active"><div class="light-spot s1"></div><div class="light-spot s2"></div>
+      <div class="relative z-10 text-center">
+        <h1 class="text-5xl font-black leading-tight">AI Coding Agent</h1>
+        <h2 class="text-3xl font-bold mt-2">市场调研 2026</h2>
+        <p class="text-gray-400 text-lg mt-6">主流产品对比 · 场景选型 · 6个月趋势</p>
+      </div>
+    </section>
+
+    <section class="slide"><div class="light-spot s2"></div><div class="light-spot s3"></div>
+      <div class="relative z-10 text-center">
+        <h2 class="text-4xl font-black leading-tight">一句话结论</h2>
+        <p class="text-2xl font-bold mt-8">行业已从“代码补全”</p>
+        <p class="text-2xl font-bold text-cyan-300">进入“交付自动化平台”</p>
+      </div>
+    </section>
+
+    <section class="slide"><div class="light-spot s1"></div><div class="light-spot s3"></div>
+      <div class="relative z-10 w-full">
+        <h2 class="text-3xl font-black mb-6">主流玩家矩阵</h2>
+        <ul class="clean">
+          <li>• 企业平台：Copilot / Codex / Cursor Enterprise</li>
+          <li>• Agent IDE：Cursor / Windsurf / Continue</li>
+          <li>• Autonomous：Devin / Replit Agent / OpenHands</li>
+          <li>• 终端流派：Aider / OpenCode / Codex CLI</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="slide"><div class="light-spot s1"></div><div class="light-spot s2"></div>
+      <div class="relative z-10 w-full">
+        <h2 class="text-3xl font-black mb-5">产品对比（简版）</h2>
+        <ul class="clean text-sm">
+          <li><span class="font-bold text-white">Copilot</span>：企业治理最强，GitHub生态深</li>
+          <li><span class="font-bold text-white">Cursor</span>：体验成熟，个人/小团队效率高</li>
+          <li><span class="font-bold text-white">Windsurf</span>：性价比突出，团队门槛低</li>
+          <li><span class="font-bold text-white">Devin</span>：并行长任务强，需控成本</li>
+          <li><span class="font-bold text-white">OpenHands</span>：开源可自托管，工程要求高</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="slide"><div class="light-spot s2"></div><div class="light-spot s3"></div>
+      <div class="relative z-10 text-center w-full">
+        <h2 class="text-3xl font-black mb-8">企业采购关键因子</h2>
+        <div class="grid grid-cols-2 gap-4 text-left">
+          <div class="bg-white/5 p-3 rounded-xl">SSO / RBAC</div>
+          <div class="bg-white/5 p-3 rounded-xl">审计日志</div>
+          <div class="bg-white/5 p-3 rounded-xl">数据边界</div>
+          <div class="bg-white/5 p-3 rounded-xl">VPC/私有化</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide"><div class="light-spot s1"></div><div class="light-spot s3"></div>
+      <div class="relative z-10 text-center">
+        <div class="kpi">5</div>
+        <p class="text-xl text-gray-300 mt-2">未来6个月高概率趋势</p>
+        <p class="text-gray-400 mt-6 text-left">1) 席位制 → 席位+算力混合计费<br>2) 多Agent并行成标配<br>3) 前台IDE + 后台Cloud Agent协同<br>4) 企业治理能力决定成交<br>5) 开源商业化加速</p>
+      </div>
+    </section>
+
+    <section class="slide"><div class="light-spot s1"></div><div class="light-spot s2"></div>
+      <div class="relative z-10 w-full">
+        <h2 class="text-3xl font-black mb-6">选型建议：个人开发者</h2>
+        <ul class="clean">
+          <li>• 主IDE：Cursor Pro / Windsurf Pro</li>
+          <li>• 终端补位：Aider / Codex CLI</li>
+          <li>• 原则：效率优先 + BYOK 控成本</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="slide"><div class="light-spot s2"></div><div class="light-spot s3"></div>
+      <div class="relative z-10 w-full">
+        <h2 class="text-3xl font-black mb-6">选型建议：小团队</h2>
+        <ul class="clean">
+          <li>• 平台：Copilot Business / Cursor Teams</li>
+          <li>• 质量闸门：Continue（规则即代码）</li>
+          <li>• 原则：统一入口 + 交付一致性</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="slide"><div class="light-spot s1"></div><div class="light-spot s3"></div>
+      <div class="relative z-10 w-full">
+        <h2 class="text-3xl font-black mb-6">选型建议：企业</h2>
+        <ul class="clean">
+          <li>• 基础盘：Copilot Enterprise / Codex Enterprise</li>
+          <li>• 专项任务：Devin / OpenHands 私有化补位</li>
+          <li>• 原则：先治理，再规模化提效</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="slide"><div class="light-spot s1"></div><div class="light-spot s2"></div><div class="light-spot s3"></div>
+      <div class="relative z-10 text-center">
+        <h2 class="text-4xl font-black">建议落地路径</h2>
+        <p class="text-2xl font-bold mt-8">主平台 + 专项Agent</p>
+        <p class="text-gray-400 mt-5">30天试点 → 指标复盘 → 扩容采购</p>
+      </div>
+    </section>
+  </div>
+
+  <div id="progress" class="progress"></div>
+  <div id="page" class="page"></div>
+
+  <script>
+    const slides=[...document.querySelectorAll('.slide')];
+    const progress=document.getElementById('progress');
+    const page=document.getElementById('page');
+    let i=0;
+    slides.forEach((_,idx)=>{const d=document.createElement('div');d.className='dot'+(idx===0?' active':'');d.onclick=()=>go(idx);progress.appendChild(d)});
+    const dots=[...document.querySelectorAll('.dot')];
+    const render=()=>{slides.forEach((s,idx)=>{s.classList.remove('active','prev');if(idx===i)s.classList.add('active');else if(idx<i)s.classList.add('prev')});dots.forEach((d,idx)=>d.classList.toggle('active',idx===i));page.textContent=`${i+1} / ${slides.length}`};
+    const go=(idx)=>{i=Math.max(0,Math.min(slides.length-1,idx));render()};
+    document.addEventListener('keydown',e=>{if(e.key==='ArrowRight'||e.key===' ')go(i+1);if(e.key==='ArrowLeft')go(i-1)});
+    let sx=0;document.addEventListener('touchstart',e=>sx=e.touches[0].clientX);document.addEventListener('touchend',e=>{const dx=sx-e.changedTouches[0].clientX;if(Math.abs(dx)>50)dx>0?go(i+1):go(i-1)});
+    render();
+  </script>
+</body>
+</html>
